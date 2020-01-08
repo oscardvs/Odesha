@@ -1,0 +1,79 @@
+.personal-information {
+    background-color: #18ab29;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.3em;
+    font-family: "Roboto"
+  }
+  input {
+    margin: 1px 0;
+    padding-left: 3%;
+    font-size: 14px;
+  }
+  input[type="text"]{
+    display: block;
+    height: 50px;
+    width: 97%;
+    border: none;
+  }
+  input[type="email"]{
+    display: block;
+    height: 50px;
+    width: 97%;
+    border: none;
+  }
+  input[type="submit"]{
+    display: block;
+    height: 60px;
+    width: 100%;
+    border: none;
+    background-color: #18ab29;
+    color: #fff;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #18ab29;
+    transition: 0.3s ease;
+  }
+  #fname {
+    width: 46.8%;
+    float: left;
+    margin-bottom: 2px;
+  }
+  #expire {
+    width: 46.8%;
+    float: left;
+    margin-bottom: 2px;
+  }
+  #city {
+    width: 46.8%;
+    float: left;
+    margin-bottom: 2px;
+  }
+  #lname {
+    width: 46.8%;
+    float: right;
+  }
+  #cvc {
+    width: 46.8%;
+    float: right;
+  }
+  #zipcode {
+    width: 46.8%;
+    float: right;
+  }
+  
+  @media only screen and (max-width: 480px){
+    body {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
