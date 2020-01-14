@@ -285,7 +285,7 @@ document.querySelector("#myForm").dispatchEvent(new Event('keyup'));
         //Captcha
 
         const config = {
-            sitekey:'6LeoeSkTAAAAEYjKRZAiKdaF',
+            sitekey:'6LeoeSkTAAAAAA9rkZs5oS82l69OEYjKRZAiKdaF',
             pageurl:'https://launches.hanon-shop.com/8725397561/checkouts/7978e70fb0926a6b5112740eb1b76122?key=7b359fe4183a781eb9f7d41f109bcc66&skip_shopify_pay=true',
             apiKey: require('./import_api_key'),
             apiSubmitUrl: 'https://2captcha.com/in.php',
