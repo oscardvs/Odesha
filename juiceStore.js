@@ -70,7 +70,6 @@ const chromeOptions = {
 
 const hookcord = require('hookcord');
 const Hook = new hookcord.Hook()
-https://discordapp.com/api/webhooks/668514532364386343/3ysk8Bjnplh8kWR1zlwPhnXz57odhqhri8PhISG8EAvFwbpcKijm8nzjZeKU7UX7-pO8
 
 (async function main() {
   const browser = await puppeteer.launch(chromeOptions);
