@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Odesha</title>
+  </head>
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+  <body onload="startTime()">
+        
+    
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Odesha</h2>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="profiles.html"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="proxies.html"><i class="fas fa-address-card"></i>Proxies</a></li>
+                <li><a href="email.html"><i class="fas fa-project-diagram"></i>Emails</a></li>
+                <li><a href="settings.html"><i class="fas fa-project-diagram"></i>Settings</a></li>
+            </ul> 
+            
+        </div>
+        <div class="main_content">
+            <div class="header"><div id="txt"></div></div>
+            <div class="info">
+
+                    <input id="input-field" type="text" name="webHook" placeholder="Your Webhook"/>    
+                    <input id="input-field" type="text" name="2captchaAPI" placeholder="2Captcha API Key"/>
+                    <input id="input-field" type="text" name="headless" placeholder="True or False"/>
+            
+
+                <div class="float-left"> Current Version: </div>
+                <div id="version" class="float-left"></div>
+
+                <div class="float-right">  </div>
+                <div id="version" class="float-right"></div>
+
+                <!-- <h2 style="margin-left: 250px;" id="version"></h2> -->
+
+                
+            </div>
+
+
+            <!-- Webhook / temp styling (MOVE TO CSS LATER) -->
+            
+
+            
+
+
+                <!-- CURRENT VERSION CONTROL / ALWAYS KEEP (‏‏‎ ‎) INVISIBLE CHARACTER -->
+                <script>
+                        document.getElementById("version").innerHTML = "‏‏‎0.1";
+                </script>
+
+            
+
+            
+
+
+
+
+
+
+
+
+          </div>
+          
+        </div>
+        
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script> src="webhook.js"</script>
+  </body>
+  <footer>
+    <script> src="time.html"</script>
+  </footer>
+</html>

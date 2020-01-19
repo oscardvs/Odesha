@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Odesha</title>
+  </head>
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+  <body onload="startTime()">
+        
+    
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Odesha</h2>
+            <ul>
+                <li><a id="animate-in" class="animate-in" href="home.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a id="animate-in" class="animate-in" href="profiles.html"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="proxies.html"><i class="fas fa-address-card"></i>Proxies</a></li>
+                <li><a href="settings.html"><i class="fas fa-project-diagram"></i>Settings</a></li>
+            </ul> 
+            
+        </div>
+        <div class="main_content">
+            <div class="header"><div id="txt"></div></div>
+            <div class="info">
+              
+                <input id="input-field" type="text" name="firstName" placeholder="First Name"/>
+                <input id="input-field" type="text" name="lastName" placeholder="Last Name"/>
+                <input id="input-field" type="text" name="gender" placeholder="Gender"/>
+                <input id="input-field" type="text" name="monthOfBirth" placeholder="Month Of Birth"/>
+                <input id="input-field" type="text" name="dayOfBirth" placeholder="Day Of Birth"/>
+                <input id="input-field" type="text" name="yearOfBirth" placeholder="Year Of Birth"/>
+                <input id="input-field" type="text" name="usSize" placeholder="US Size"/>
+                <input id="input-field" type="text" name="phoneNumber" placeholder="Phone Number"/>
+                <input id="input-field" type="text" name="email" placeholder="Email"/>
+                <input id="input-field" type="text" name="instagram" placeholder="Instagram"/>
+                <input id="input-field" typr="text" name="siteUrl" placeholder="Site URL"/>
+
+                <p><h3>
+
+                  <input id="input-button" type="submit" value="Start"/>
+
+                </h3></p>
+
+          </div>
+        </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    
+  </body>
+  <footer>
+    <script> src="time.html"</script>
+  </footer>
+</html>
+
