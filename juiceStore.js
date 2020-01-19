@@ -4,72 +4,66 @@ npm i puppeteer
 npm install --save request
 npm install --save request-promise
 npm install --save request-promise-native
-npm install hookcord
 */
 const puppeteer = require('puppeteer');
 const request = require('request-promise-native');
 const poll = require('promise-poller').default;
-const hookcord = require('hookcord');
 
 const config = {
   sitekey: '6LdCcHYUAAAAAMrUAIBStM6mquuQLbgi_cSWJet9',
-  pageurl: document.getElementById("siteUrl").juicestore.html,
-  apiKey: document.getElementById("2captchaAPI").settings.html,
+  pageurl: 'https://juicestore.com/blogs/editorial/raffle-nike-air-max-1-premium-chinese-new-year',
+  apiKey: 'eddb12d5ba17b42d917a5da98443651c',
   apiSubmitUrl :'http://2captcha.com/in.php',
   apiRetrieveUrl:'http://2captcha.com/res.php'
 };
-
-const apiKey = document.getElementById("2captchaAPI").settings.html;
+const apiKey = ('eddb12d5ba17b42d917a5da98443651c');
 
 const getFirstName = function () {
-    return document.getElementById("firstName").juicestore.html
+    return 'luck'
 };
 
 const getLastName = function () {
-    return document.getElementById("lastName").juicestore.html
+    return 'frankel'
 };
 
 const getGender = function () {
-    return document.getElementById("gender").juicestore.html 
+    return 'male' 
 };
 
 const getMonthOfBirth = function () {
-    return document.getElementById("monthOfBirth").juicestore.html
+    return '04'
 };
 
 const getDayOfBirth = function () {
-    return document.getElementById("dayOfBirth").juicestore.html
+    return '05'
 };
 
 const getYearOfBirth = function () {
-    return document.getElementById("yearOfBirth").juicestore.html
+    return '2002'
 };
 
 const getUsSize = function () {
-    return document.getElementById("usSize").juicestore.html
+    return '7'
 };
 
 const getPhoneNumber = function () {
-    return document.getElementById("phoneNumber").juicestore.html
+    return '0497535789'
 };
 
 const getEmail = function () {
-    return document.getElementById("email").juicestore.html
+    return 'oscar.devos6856@odesha.xyz'
 };
 
 const getInsta = function () {
-    return document.getElementById("instagram").juicestore.html
+    return 'louislus.09'
 };
 
 const chromeOptions = {
   executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-  headless: document.getElementById("headless").settings.html, 
+  headless:false, 
   slowMo:50,
   defaultViewport: null
 };
-
-const hookcord = require('hookcord');
-const Hook = new hookcord.Hook()
 
 (async function main() {
   const browser = await puppeteer.launch(chromeOptions);
@@ -145,8 +139,8 @@ async function initiateCaptchaRequest() {
   const formData = {
     method: 'userrecaptcha',
     googlekey: '6LdCcHYUAAAAAMrUAIBStM6mquuQLbgi_cSWJet9',
-    key: document.getElementById("2captchaAPI").profile.html,
-    pageurl: document.getElementById("siteUrl").juicestore.html,
+    key: 'eddb12d5ba17b42d917a5da98443651c',
+    pageurl: 'https://juicestore.com/blogs/editorial/raffle-nike-air-max-1-premium-chinese-new-year',
     json: 1
   };
 
@@ -180,18 +174,4 @@ function requestCaptchaResults(apiKey, requestId) {
   }
 }
 
-const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-Hook.login('668514532364386343', '3ysk8Bjnplh8kWR1zlwPhnXz57odhqhri8PhISG8EAvFwbpcKijm8nzjZeKU7UX7-pO8');
-Hook.setPayload({
-  "embeds": [{
-  "title": "Congrats! Your entry is in.",
-  "color": 15257231,
-    "fields": [
-      {
-        "name": "Field",
-        "value": "Good Luck."
-      }
-    ]
-  }]
-})
+const timeout = ms => new Promise(resolve => setTimeout(resolve, ms))
