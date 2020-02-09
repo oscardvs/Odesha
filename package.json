@@ -1,0 +1,23 @@
+{
+  "name": "odesharaffles",
+  "version": "1.0.0",
+  "description": "Simply Bot Raffles",
+  "scripts": {
+    "start": "electron ."
+  },
+  "main": "./app/main.js",
+  "author": "Oscar Devos",
+  "devDependencies": {
+    "electron": "^7.1.2",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.17",
+    "discord-rich-presence": "^0.0.8",
+    "electron-is-dev": "^1.1.0",
+    "electron-reload": "^1.5.0",
+    "electron-settings": "^3.2.0",
+    "jquery": "^3.4.1",
+    "user-agents": "^1.0.501"
+  }
+}
